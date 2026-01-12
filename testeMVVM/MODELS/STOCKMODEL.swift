@@ -7,8 +7,8 @@
 import SwiftUI
 import Foundation
 
-/// Estrtura de um objeto real que estamos codificando e tipificando
-struct STOCKMODEL: Codable {
+/// Estrutura de um objeto real que estamos codificando e tipificando
+struct STOCKMODEL: Codable, Equatable {
     var prateleira: Int?
     var local_galpao: String?
     var andar: Int?

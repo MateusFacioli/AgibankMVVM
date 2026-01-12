@@ -20,21 +20,10 @@ final class StockViewModel: ObservableObject {
         self.stock = stock
     }
     
-    //Duas abordagens
     func cadastrarGalpao(_ objeto: STOCKMODEL) -> STOCKMODEL {
-    
-        self.stock = objeto// abordagem 1
-        self.idGalpao = objeto.id_galpao // abordagem 1
-        
-        self.stock.andar = objeto.andar
-        self.stock.local_galpao = objeto.local_galpao
-        self.stock.depto =  objeto.depto
-        self.stock.prateleira = objeto.prateleira
-        self.stock.setor =  objeto.setor
-        self.stock.id_item = objeto.id_item
-        self.stock.id_galpao = objeto.id_galpao
-        galpoes.append(stock) // abordagem 1 galpoes.append(objeto)
-        return stock // abordagem 1 return objeto
+        self.stock = objeto
+        galpoes.append(stock)
+        return stock
     }
     
     func removerGalpao(idGalpaoparam: Int) {

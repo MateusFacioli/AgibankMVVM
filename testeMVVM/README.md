@@ -14,12 +14,15 @@ Refatorar: alterar ids do model para let, alterar funções de update e remove, 
 
 
 Prática 3:
-maps localizacao, coordenadas
+maps localizacao, coordenadas, precisao, reaproveitar conteudo -> checkbox, cadastrar item de galpao
 
-
+Prática 4:
+salvar dados (bloco de notas, arquivo nativo), segurança private, protected,
 
 
 
 para tarefa 
 criar botao cadastrar e remover na stockview e chamar os metodos da viewmodel
 criar botão limpar formulário
+
+criar telas diferentes de ExampleView para cada botão
