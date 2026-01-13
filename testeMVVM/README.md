@@ -16,7 +16,11 @@ Refatorar: alterar ids do model para let, alterar funções de update e remove, 
 Prática 3:
 maps localizacao, coordenadas, precisao, reaproveitar conteudo -> checkbox, cadastrar item de galpao
 
-Prática 4:
+
+Prática 4: 
+api publica, get post delete
+
+Prática 5:
 salvar dados (bloco de notas, arquivo nativo), segurança private, protected,
 
 

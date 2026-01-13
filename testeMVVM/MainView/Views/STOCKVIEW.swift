@@ -14,7 +14,7 @@ struct STOCKVIEW: View {
     /// Se criassemos o ViewModel sem @StateObject (por exemplo, como var ou com @ObservedObject inicializando ali), uma nova instância seria criada a cada build. Isso faria perdemos o estado (o que o user digitou)
     @EnvironmentObject private var mapsCoordinator: MapsCoordinator
     @StateObject var viewModel: StockViewModel = StockViewModel(
-        stock: STOCKMODEL(
+        stock: StockModel(
         /// esse  são valores iniciais  default na UI .
             prateleira: 1234,
             local_galpao: LocationCoordinateModel(latitude: -40, longitude: -37),

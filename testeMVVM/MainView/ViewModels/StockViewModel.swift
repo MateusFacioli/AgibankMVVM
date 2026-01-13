@@ -1,5 +1,5 @@
 //
-//  STOCKVIEWMODEL.swift
+//  StockViewModel.swift
 //  testeMVVM
 //
 //  Created by Mateus Rodrigues on 08/01/26.
@@ -12,15 +12,15 @@ import Combine
 
 final class StockViewModel: ObservableObject {
     
-   @Published var stock: STOCKMODEL
-   @Published var galpoes: [STOCKMODEL] = []
+   @Published var stock: StockModel
+   @Published var galpoes: [StockModel] = []
    @Published  var idGalpao = 0
     
-    init(stock: STOCKMODEL) {
+    init(stock: StockModel) {
         self.stock = stock
     }
     
-    func cadastrarGalpao(_ objeto: STOCKMODEL) -> STOCKMODEL {
+    func cadastrarGalpao(_ objeto: StockModel) -> StockModel {
         self.stock = objeto
         galpoes.append(stock)
         return stock
@@ -35,8 +35,7 @@ final class StockViewModel: ObservableObject {
         }
     }
     
-    //retorno opcional muda o else para nil
-    func atualizarGalpao(idGalpaoparam: Int) -> STOCKMODEL? {
+    func atualizarGalpao(idGalpaoparam: Int) -> StockModel? {
         idGalpao = idGalpaoparam
         if let index = galpoes.firstIndex(where: { $0.id_galpao == idGalpao }) {
             var updated = galpoes[index]

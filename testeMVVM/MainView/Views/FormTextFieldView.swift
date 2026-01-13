@@ -108,5 +108,5 @@ struct FormTextFieldView: View {
 }
 ///Somente esses 2 campos do modelo não são opcionais logo precisam de implementação
 #Preview {
-    FormTextFieldView(alteracaoobj: StockViewModel(stock: STOCKMODEL(id_item: "", id_galpao: 1)))
+    FormTextFieldView(alteracaoobj: StockViewModel(stock: StockModel(id_item: "", id_galpao: 1)))
 }

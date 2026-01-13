@@ -1,5 +1,5 @@
 //
-//  STOCKMODEL.swift
+//  StockModel.swift
 //  testeMVVM
 //
 //  Created by Mateus Rodrigues on 08/01/26.
@@ -10,7 +10,7 @@ import MapKit
 import CoreLocation
 
 /// Estrutura de um objeto real que estamos codificando e tipificando
-struct STOCKMODEL: Codable, Equatable {
+struct StockModel: Codable, Equatable {
     var prateleira: Int?
     var local_galpao: LocationCoordinateModel?
     var andar: Int?

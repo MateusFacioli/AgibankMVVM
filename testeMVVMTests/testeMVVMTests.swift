@@ -12,7 +12,7 @@ import XCTest
 
 struct testeMVVMTests {
     let mock = STOCKMODELMOCK()
-    let naomockado = STOCKMODEL(id_item: "", id_galpao: 0)
+    let naomockado = StockModel(id_item: "", id_galpao: 0)
     let resultado = StockViewModelMOCK()
 
     @Test func example() async throws {
@@ -29,7 +29,7 @@ struct testeMVVMTests {
     }
     
     /**
-     func cadastrarGalpao(_ objeto: STOCKMODEL) -> STOCKMODEL {
+     func cadastrarGalpao(_ objeto: StockModel) -> StockModel {
          self.stock = objeto
          galpoes.append(stock)
          return stock
