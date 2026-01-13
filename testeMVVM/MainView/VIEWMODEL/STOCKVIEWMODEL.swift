@@ -52,6 +52,23 @@ final class StockViewModel: ObservableObject {
             return nil
         }
     }
-}
+    
+    // MARK: - Location integration helpers
+    func updateLocationWithCallback(_ coordinate: LocationCoordinateModel) {
+        self.stock.local_galpao = coordinate
+    }
 
+    // shared LocationViewModel pattern: keep a single instance that screens can use
+    @Published var sharedLocationVM: LocationViewModel = LocationViewModel()
+
+    func updateLocationFromSharedVM() {
+        if let coord = sharedLocationVM.savedCoordinate {
+            self.stock.local_galpao = coord
+        }
+    }
+    // binding-based update
+    func updateLocationBinding(_ coordinate: LocationCoordinateModel?) {
+        self.stock.local_galpao = coordinate
+    }
+}
 

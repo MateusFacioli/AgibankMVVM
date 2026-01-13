@@ -25,4 +25,12 @@ para tarefa
 criar botao cadastrar e remover na stockview e chamar os metodos da viewmodel
 criar botão limpar formulário
 
+para tarefa de maps
+criar dropdown para cidades em varios estados, países
+criar localização em tempo real
+criar botão de zoom
+criar rota para onde digitamos
+criar label que mostra a cidade selecionada alem da coordenada
+
+
 criar telas diferentes de ExampleView para cada botão

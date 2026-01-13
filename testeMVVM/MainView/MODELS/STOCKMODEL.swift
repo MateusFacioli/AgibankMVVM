@@ -6,11 +6,13 @@
 
 import SwiftUI
 import Foundation
+import MapKit
+import CoreLocation
 
 /// Estrutura de um objeto real que estamos codificando e tipificando
 struct STOCKMODEL: Codable, Equatable {
     var prateleira: Int?
-    var local_galpao: String?
+    var local_galpao: LocationCoordinateModel?
     var andar: Int?
     var setor: Int?
     var depto: String?

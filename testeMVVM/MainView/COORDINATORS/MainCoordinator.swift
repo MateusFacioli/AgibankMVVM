@@ -54,27 +54,22 @@ struct ExampleView: View {
     
     var body: some View {
         List {
-            Section("Dashboard") {
-                Button("Ir para criar") {
+            Section("C.R.U.D.") {
+                Button("Criar galpão") {
                     coordinator.navigate(to: .create)
                 }
-                Button("Ir para remover") {
+                Button("Remover galpão") {
                     coordinator.navigate(to: .remove)
                 }
-                Button("Ir para atualizar") {
+                Button("Atualizar galpão") {
                     coordinator.navigate(to: .update)
                 }
-                Button("Ir para consultar") {
+                Button("Consultar galpão") {
                     coordinator.navigate(to: .consult)
                 }
             }
         }
-        .navigationTitle("MENU")
-        .toolbar {
-            ToolbarItem(placement: .topBarTrailing) {
-                Button("Root") { coordinator.popToRoot() }
-            }
-        }
+        .navigationTitle("Ex mvvm")
     }
 }
 
