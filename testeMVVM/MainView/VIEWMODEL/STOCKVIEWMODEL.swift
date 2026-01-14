@@ -15,10 +15,13 @@ final class StockViewModel: ObservableObject {
    @Published var stock: STOCKMODEL
    @Published var galpoes: [STOCKMODEL] = []
    @Published  var idGalpao = 0
+    @Published var selectedDepartamento: String = "Tecnologia"
     
     init(stock: STOCKMODEL) {
         self.stock = stock
     }
+    
+    var departamentos = ["Elétrica", "Manutenção", "Comércio", "Logística", "Tecnologia"]
     
     func cadastrarGalpao(_ objeto: STOCKMODEL) -> STOCKMODEL {
         self.stock = objeto

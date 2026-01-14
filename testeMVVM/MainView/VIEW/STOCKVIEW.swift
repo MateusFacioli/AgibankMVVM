@@ -12,6 +12,7 @@ import MapKit
 struct STOCKVIEW: View {
 /// @StateObject: esta View é DONA do ViewModel. Isso significa que a instância é criada uma única vez e preservada, enquanto a view existir, mesmo que o body seja recalculado várias vezes. Use @StateObject quando a própria view cria e gerencia o ciclo de vida do objeto observável, consultando alterações
     /// Se criassemos o ViewModel sem @StateObject (por exemplo, como var ou com @ObservedObject inicializando ali), uma nova instância seria criada a cada build. Isso faria perdemos o estado (o que o user digitou)
+    @Environment(\.colorScheme) var colorScheme
     @EnvironmentObject private var mapsCoordinator: MapsCoordinator
     @StateObject var viewModel: StockViewModel = StockViewModel(
         stock: STOCKMODEL(
@@ -27,10 +28,16 @@ struct STOCKVIEW: View {
     )
     
     var body: some View {
-    
-        ///Como o FormTextFieldView usa @ObservedObject, ele observa este viewModel e atualiza a UI quando qualquer campo do 'stock' muda. Os TextFields dentro do formulário estão ligados (Binding) às propriedades do ViewModel.
+        ZStack{
+            Color(colorScheme == .dark ? .black : .white)
+                .ignoresSafeArea()
+            
+            ///Como o FormTextFieldView usa @ObservedObject, ele observa este viewModel e atualiza a UI quando qualquer campo do 'stock' muda. Os TextFields dentro do formulário estão ligados (Binding) às propriedades do ViewModel.
+            
+            FormTextFieldView(alteracaoobj: viewModel)
+        }
         
-        FormTextFieldView(alteracaoobj: viewModel)
+        Image("Sap")
 
         if let coord = viewModel.stock.local_galpao {
             Text("Localização escolhida: \(.init(format: "%.5f", coord.latitude)), \(.init(format: "%.5f", coord.longitude))")
