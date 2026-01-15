@@ -78,10 +78,10 @@ struct WeatherResults: Decodable {
     let forecast: [WeatherForecast]
     /// Código CREF
     let cref: String
-    /// Latitude da localidade
-    let latitude: Double
-    /// Longitude da localidade
-    let longitude: Double
+    /// Latitude da localidade (pode não estar presente no JSON)
+    let latitude: Double?
+    /// Longitude da localidade (pode não estar presente no JSON)
+    let longitude: Double?
 
     enum CodingKeys: String, CodingKey {
         case temp, date, time, description, currently, woeid, city, humidity, cloudiness, rain, sunrise, sunset, forecast, cref, latitude, longitude
