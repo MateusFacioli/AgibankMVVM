@@ -37,8 +37,6 @@ final class MapsCoordinator: ObservableObject {
 
     // Métodos de intenção
     func presentCallback() { activeSheet = .locationCallback }
-    func presentSharedVM() { activeSheet = .locationShared }
-    func presentBinding() { activeSheet = .locationBinding }
 
     func dismiss() { activeSheet = nil }
 }

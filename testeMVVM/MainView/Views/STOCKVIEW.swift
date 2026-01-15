@@ -45,8 +45,6 @@ struct STOCKVIEW: View {
                     print("DADOS DO STOCK \(viewModel.stock)")
                 }
                 Button("Definir localização (Callback)") { mapsCoordinator.presentCallback() }
-                Button("Definir localização (Shared ViewModel)") { mapsCoordinator.presentSharedVM() }
-                Button("Definir localização (Binding)") { mapsCoordinator.presentBinding() }
             }
             Divider().padding(.vertical, 8)
             
