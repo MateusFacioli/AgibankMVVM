@@ -11,7 +11,7 @@ import SwiftUI
 struct testeMVVMApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootSelectorView()
         }
     }
 }
