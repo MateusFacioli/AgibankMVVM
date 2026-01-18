@@ -1,0 +1,321 @@
+diff --git a/testeMVVM.xcodeproj/project.pbxproj b/testeMVVM.xcodeproj/project.pbxproj
+index a93af69..d327005 100644
+--- a/testeMVVM.xcodeproj/project.pbxproj
++++ b/testeMVVM.xcodeproj/project.pbxproj
+@@ -37,11 +37,21 @@
+ 			);
+ 			target = DCB0A4ED2F101F6E00E2B18A /* testeMVVM */;
+ 		};
++		DCF71A402F1A7FF300D68771 /* Exceptions for "testeMVVM" folder in "testeMVVM" target */ = {
++			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
++			membershipExceptions = (
++				Info.plist,
++			);
++			target = DCB0A4ED2F101F6E00E2B18A /* testeMVVM */;
++		};
+ /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+ 
+ /* Begin PBXFileSystemSynchronizedRootGroup section */
+ 		DCB0A4F02F101F6E00E2B18A /* testeMVVM */ = {
+ 			isa = PBXFileSystemSynchronizedRootGroup;
++			exceptions = (
++				DCF71A402F1A7FF300D68771 /* Exceptions for "testeMVVM" folder in "testeMVVM" target */,
++			);
+ 			path = testeMVVM;
+ 			sourceTree = "<group>";
+ 		};
+@@ -413,6 +423,8 @@
+ 				DEVELOPMENT_TEAM = SB927AN2T5;
+ 				ENABLE_PREVIEWS = YES;
+ 				GENERATE_INFOPLIST_FILE = YES;
++				INFOPLIST_FILE = testeMVVM/Info.plist;
++				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+ 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+ 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+ 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+@@ -445,6 +457,8 @@
+ 				DEVELOPMENT_TEAM = SB927AN2T5;
+ 				ENABLE_PREVIEWS = YES;
+ 				GENERATE_INFOPLIST_FILE = YES;
++				INFOPLIST_FILE = testeMVVM/Info.plist;
++				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+ 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+ 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+ 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+diff --git a/testeMVVM.xcodeproj/xcuserdata/mateusrodrigues.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist b/testeMVVM.xcodeproj/xcuserdata/mateusrodrigues.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+index b94c27e..26c6d10 100644
+--- a/testeMVVM.xcodeproj/xcuserdata/mateusrodrigues.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
++++ b/testeMVVM.xcodeproj/xcuserdata/mateusrodrigues.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+@@ -47,53 +47,55 @@
+             endingLineNumber = "252"
+             landmarkName = "errorView(message:)"
+             landmarkType = "7">
+-            <Locations>
+-               <Location
+-                  uuid = "41B24CD6-CEFB-4E24-9EFF-BF78551A38FD - 71a594965d96319d"
+-                  shouldBeEnabled = "Yes"
+-                  ignoreCount = "0"
+-                  continueAfterRunningActions = "No"
+-                  symbolName = "testeMVVM.FinancialExampleView.errorView(message: Swift.String) -&gt; some"
+-                  moduleName = "testeMVVM.debug.dylib"
+-                  usesParentBreakpointCondition = "Yes"
+-                  urlString = "file:///Users/mateusrodrigues/Projects/testeMVVM/testeMVVM/Apis/Views/FinancialExampleView.swift"
+-                  startingColumnNumber = "9223372036854775807"
+-                  endingColumnNumber = "9223372036854775807"
+-                  startingLineNumber = "252"
+-                  endingLineNumber = "252">
+-               </Location>
+-               <Location
+-                  uuid = "41B24CD6-CEFB-4E24-9EFF-BF78551A38FD - cf98cd4e7d11dbb8"
+-                  shouldBeEnabled = "Yes"
+-                  ignoreCount = "0"
+-                  continueAfterRunningActions = "No"
+-                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Text)&gt; in testeMVVM.FinancialExampleView.errorView(message: Swift.String) -&gt; some"
+-                  moduleName = "testeMVVM.debug.dylib"
+-                  usesParentBreakpointCondition = "Yes"
+-                  urlString = "file:///Users/mateusrodrigues/Projects/testeMVVM/testeMVVM/Apis/Views/FinancialExampleView.swift"
+-                  startingColumnNumber = "9223372036854775807"
+-                  endingColumnNumber = "9223372036854775807"
+-                  startingLineNumber = "252"
+-                  endingLineNumber = "252">
+-               </Location>
+-            </Locations>
+          </BreakpointContent>
+       </BreakpointProxy>
+       <BreakpointProxy
+          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+          <BreakpointContent
+-            uuid = "802E3332-A950-407B-911B-021D94C6BDC7"
++            uuid = "0240FC0E-2A0F-459D-90A0-F3AA34DA29A5"
++            shouldBeEnabled = "Yes"
++            ignoreCount = "0"
++            continueAfterRunningActions = "No"
++            filePath = "testeMVVM/Apis/Services/WeatherService.swift"
++            startingColumnNumber = "9223372036854775807"
++            endingColumnNumber = "9223372036854775807"
++            startingLineNumber = "41"
++            endingLineNumber = "41"
++            landmarkName = "fetch(_:)"
++            landmarkType = "7">
++         </BreakpointContent>
++      </BreakpointProxy>
++      <BreakpointProxy
++         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
++         <BreakpointContent
++            uuid = "54BC65C2-9052-405B-BE24-1D631CC8FEC4"
+             shouldBeEnabled = "Yes"
+             ignoreCount = "0"
+             continueAfterRunningActions = "No"
+-            filePath = "testeMVVM/Apis/Views/WeatherResultView.swift"
++            filePath = "testeMVVM/Apis/Views/WeatherInputView.swift"
+             startingColumnNumber = "9223372036854775807"
+             endingColumnNumber = "9223372036854775807"
+-            startingLineNumber = "27"
+-            endingLineNumber = "27"
++            startingLineNumber = "35"
++            endingLineNumber = "35"
+             landmarkName = "body"
+             landmarkType = "24">
+          </BreakpointContent>
+       </BreakpointProxy>
++      <BreakpointProxy
++         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
++         <BreakpointContent
++            uuid = "921CF871-945C-4587-B9DC-5AD8703205DC"
++            shouldBeEnabled = "Yes"
++            ignoreCount = "0"
++            continueAfterRunningActions = "No"
++            filePath = "testeMVVM/Apis/Services/WeatherService.swift"
++            startingColumnNumber = "9223372036854775807"
++            endingColumnNumber = "9223372036854775807"
++            startingLineNumber = "22"
++            endingLineNumber = "22"
++            landmarkName = "makeURL(for:)"
++            landmarkType = "7">
++         </BreakpointContent>
++      </BreakpointProxy>
+    </Breakpoints>
+ </Bucket>
+diff --git a/testeMVVM.xcodeproj/xcuserdata/mateusrodrigues.xcuserdatad/xcschemes/xcschememanagement.plist b/testeMVVM.xcodeproj/xcuserdata/mateusrodrigues.xcuserdatad/xcschemes/xcschememanagement.plist
+index fab9881..0dfc4fa 100644
+--- a/testeMVVM.xcodeproj/xcuserdata/mateusrodrigues.xcuserdatad/xcschemes/xcschememanagement.plist
++++ b/testeMVVM.xcodeproj/xcuserdata/mateusrodrigues.xcuserdatad/xcschemes/xcschememanagement.plist
+@@ -10,5 +10,23 @@
+ 			<integer>0</integer>
+ 		</dict>
+ 	</dict>
++	<key>SuppressBuildableAutocreation</key>
++	<dict>
++		<key>DCB0A4ED2F101F6E00E2B18A</key>
++		<dict>
++			<key>primary</key>
++			<true/>
++		</dict>
++		<key>DCB0A4FA2F101F7200E2B18A</key>
++		<dict>
++			<key>primary</key>
++			<true/>
++		</dict>
++		<key>DCB0A5042F101F7200E2B18A</key>
++		<dict>
++			<key>primary</key>
++			<true/>
++		</dict>
++	</dict>
+ </dict>
+ </plist>
+diff --git a/testeMVVM/Apis/Views/WeatherTableViewCell.swift b/testeMVVM/Apis/Views/WeatherTableViewCell.swift
+index 17eba9d..656ddf8 100644
+--- a/testeMVVM/Apis/Views/WeatherTableViewCell.swift
++++ b/testeMVVM/Apis/Views/WeatherTableViewCell.swift
+@@ -6,3 +6,71 @@
+ //
+ 
+ import Foundation
++import UIKit
++
++class WeatherTableViewCell: UITableViewCell {
++    
++    static let identifier = "WeatherTableViewCell"
++    
++    private let temperatura: UILabel = {
++        let label = UILabel()
++        label.text = "graus celsius"
++        label.font = UIFont.systemFont(ofSize: 18, weight: .bold)
++        label.translatesAutoresizingMaskIntoConstraints = false
++        return label
++    }()
++    
++    private let buscarButton: UIButton = {
++        let button = UIButton(type: .system)
++        button.setTitle("Buscar", for: .normal)
++        button.translatesAutoresizingMaskIntoConstraints = false
++        return button
++    }()
++    
++    private let stackView: UIStackView = {
++        let stack = UIStackView()
++        stack.distribution = .fillEqually
++        stack.translatesAutoresizingMaskIntoConstraints = false
++        stack.axis = .vertical
++        return stack
++    }()
++    
++    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
++        super.init(style: style, reuseIdentifier: reuseIdentifier)
++    }
++    
++    
++    required init?(coder: NSCoder) {
++        fatalError("init(coder:) has not been implemented")
++    }
++    
++    override func layoutSubviews() {
++        super.layoutSubviews()
++        
++        let stackView = UIStackView(arrangedSubviews: [temperatura, buscarButton])
++        stackView.axis = .horizontal
++        stackView.spacing = 16
++        stackView.translatesAutoresizingMaskIntoConstraints = false
++        
++        contentView.addSubview(stackView)
++    }
++    
++    private func  addSubview() {
++        stackView.addSubview(temperatura)
++        stackView.addSubview(buscarButton)
++        stackView.addArrangedSubview(contentView)
++        addConstraint()
++        
++    }
++    
++    private func addConstraint() {
++        NSLayoutConstraint.activate([
++            stackView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 16),
++            stackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
++            stackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: 16),
++            stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: 16),
++            
++        ])
++    }
++}
++    
+diff --git a/testeMVVM/Apis/Views/WeatherTableViewViewController.swift b/testeMVVM/Apis/Views/WeatherTableViewViewController.swift
+index 2d2fa3c..7f0f3f5 100644
+--- a/testeMVVM/Apis/Views/WeatherTableViewViewController.swift
++++ b/testeMVVM/Apis/Views/WeatherTableViewViewController.swift
+@@ -6,3 +6,29 @@
+ //
+ 
+ import Foundation
++import UIKit
++
++final class WeatherTableViewViewController: UIViewController {
++    
++    override func viewDidLoad() {
++        super.viewDidLoad()
++    }
++    
++}
++
++//extension WeatherTableViewViewController: UITableViewDelegate, UITableViewDataSource {
++//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
++//        <#code#>
++//    }
++//    
++//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
++//        <#code#>
++//    }
++//    
++//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
++//        
++//    }
++//    
++//    
++//    
++//}
+diff --git a/testeMVVM/README.md b/testeMVVM/README.md
+index 6dec35f..8b6e877 100644
+--- a/testeMVVM/README.md
++++ b/testeMVVM/README.md
+@@ -24,13 +24,37 @@ Prática 5:
+ salvar dados (bloco de notas, arquivo nativo), segurança private, protected, persistencia de dados
+ 
+ pratica 6: 
+-arrastar um componente visual,
+-dar zoom no emoji
+-componente personalizado
+ jogo da memoria
++    arrastar um componente visual,
++    dar zoom no emoji
++    componente personalizado
++    
++    
++app financeiro carteira etc
++travellog - firebase
++authenticao token - mensagem push notification 
++camera
++criar referencias com o java
++
++
++melhorar performance do app, testa, onde e pq
++
++ciclo de vida -> rotas no app de mapas
+ 
+  
+ #abordagens
++swiftdata e coredata
++criar  telas e flow do projeto de api usando swift normal
++ testes unitarios
++ notificaçoes e hardware -> face id, camera, giroscopio, permissoes
++ info.plist
++ ATUALIZACOES DE LENTIDAO
++ COMEÇAR E REFATORAR MAPA
++  JEITO DE FAZER MVVM -> COMO FAZER
++ 
++ 
++ simplificar conexao -> tutorial -> permissao de app que nao tem, hirarquia
++ 
+ -exercicios em arquivos e +testes +imagens teoria
+ -como comecar com o ui -> padrao de tela
+ - arquitetura MVVM 

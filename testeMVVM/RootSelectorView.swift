@@ -13,6 +13,9 @@ struct RootSelectorView: View {
                 Section("Arquitetura") {
                     NavigationLink("Arquitetura (Fluxo Principal)") { ArquiteturaView() }
                 }
+                Section("Permissoes") {
+                    NavigationLink("Calendário") { PermissaoCalendarioApp() }
+                }
             }
             .navigationTitle("Projetos")
         }

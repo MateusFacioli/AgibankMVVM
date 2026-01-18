@@ -37,11 +37,32 @@
 			);
 			target = DCB0A4ED2F101F6E00E2B18A /* testeMVVM */;
 		};
+		DCEBFBC32F1D2922005AD8A5 /* Exceptions for "testeMVVM" folder in "testeMVVM" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Permissoes/README.md,
+			);
+			target = DCB0A4ED2F101F6E00E2B18A /* testeMVVM */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		DCEBFBC42F1D2922005AD8A5 /* Exceptions for "testeMVVM" folder in "Compile Sources" phase from "testeMVVM" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = DCB0A4EA2F101F6E00E2B18A /* Sources */;
+			membershipExceptions = (
+				Permissoes/README.md,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		DCB0A4F02F101F6E00E2B18A /* testeMVVM */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				DCEBFBC32F1D2922005AD8A5 /* Exceptions for "testeMVVM" folder in "testeMVVM" target */,
+				DCEBFBC42F1D2922005AD8A5 /* Exceptions for "testeMVVM" folder in "Compile Sources" phase from "testeMVVM" target */,
+			);
 			path = testeMVVM;
 			sourceTree = "<group>";
 		};
@@ -413,6 +434,8 @@
 				DEVELOPMENT_TEAM = SB927AN2T5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCalendarsFullAccessUsageDescription = "Para criar e gerenciar eventos, precisamos de acesso completo ao seu calendário.";
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "O aplicativo precisa acessar seu calendário para criar eventos e lembretes";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -445,6 +468,8 @@
 				DEVELOPMENT_TEAM = SB927AN2T5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCalendarsFullAccessUsageDescription = "Para criar e gerenciar eventos, precisamos de acesso completo ao seu calendário.";
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "O aplicativo precisa acessar seu calendário para criar eventos e lembretes";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -5,41 +5,52 @@ Linguagem: SwiftUI
 Clean code: começando pela model -> viewmodel -> view
 Obter inputs do user os dados da model
 
-
 Prática 2:
 Navegação
 Coordinator
 Viewcontroller
 Refatorar: alterar ids do model para let, alterar funções de update e remove, nomes Classes e Pastas, comentários
 
-
 Prática 3:
 maps localizacao, coordenadas, precisao, reaproveitar conteudo -> checkbox, cadastrar item de galpao
-
 
 Prática 4: 
 api publica, get post delete
 
-Prática 5:
+Prática 5: 
+ notificaçoes e hardware -> face id, camera, giroscopio, permissoes
+ info.plist
+ persistencia de dados
+
+Prática 6:
 salvar dados (bloco de notas, arquivo nativo), segurança private, protected, persistencia de dados
 
-pratica 6: 
-arrastar um componente visual,
-dar zoom no emoji
-componente personalizado
-jogo da memoria
+pratica 7: 
+jogo da memoria - mostrar
+    arrastar um componente visual, dar zoom no emoji - não está pronto
+    componente personalizado
+    
+ 
+Outros apps
+app financeiro carteira etc
+travellog - firebase
+authenticao token - mensagem push notification 
+ciclo de vida -> rotas no app de mapas - reforçar
 
  
 #abordagens
 -exercicios em arquivos e +testes +imagens teoria
 -como comecar com o ui -> padrao de tela
-- arquitetura MVVM 
+- arquitetura MVVM - como fazer - reforçar
 - api https://hgbrasil.com/docs/weather (URLComponents, URLQueryItem, URLSession, HTTPURLResponse)
-- ciclo de vida
+- ciclo de vida - reforçar
 - animações + lottie
-- swift & swiftui
+- swift & swiftui - ok
+- swiftdata e coredata  - reforçar
 - lógica debug/log
-- testes unitários
+- testes unitários - reforçar
+- referencias com o java - criar
+melhorar performance do app, testa, onde e pq - reforçar
 - figma/ stitch
 
 
