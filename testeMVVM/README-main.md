@@ -12,7 +12,7 @@ Viewcontroller
 Refatorar: alterar ids do model para let, alterar funções de update e remove, nomes Classes e Pastas, comentários
 
 Prática 3:
-maps localizacao, coordenadas, precisao, reaproveitar conteudo -> checkbox, cadastrar item de galpao
+maps localizacao, coordenadas, precisao, reaproveitar conteudo -> checkbox, cadastrar item de galpao -> rotas no app de mapas - reforçar
 
 Prática 4: 
 api publica, get post delete
@@ -34,8 +34,14 @@ jogo da memoria - mostrar
 Outros apps
 app financeiro carteira etc
 travellog - firebase
-authenticao token - mensagem push notification 
-ciclo de vida -> rotas no app de mapas - reforçar
+app logica
+figma
+push notification
+tagueamento + analytics + acessibilidade 
+ciclo de vida & authenticao token - mensagem 
+modulos podfile cocoapods
+banco de dados
+upload de arquivos - pdf de comprovantes
 
  
 #abordagens
@@ -63,3 +69,12 @@ melhorar performance do app, testa, onde e pq - reforçar
 - criar botão de zoom - dragg functions //arrastar e soltar
 - criar rota para onde digitamos // em aula
 - swift nativo  alem do swiftui
+
+"Quando o usuário clica no botão:
+1. View → ViewModel: 'usuário clicou'
+2. ViewModel → Service: 'solicite permissão'
+3. Service → Sistema iOS: 'diálogo nativo'
+4. Sistema → Service: 'usuário respondeu'
+5. Service → ViewModel: 'aqui está a resposta'
+6. ViewModel → View (via @Published): 'atualize a tela'
+7. View: mostra novo estado automaticamente"

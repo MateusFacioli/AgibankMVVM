@@ -31,7 +31,7 @@ MVVM Architecture:
 Como adicionar no Xcode:
 Selecione seu projeto no navegador
 Vá na aba "Info"
-Clique no ícone "+" em "Custom iOS Target Properties"
+Clique no ícone "+" em "Custom iOS Target Properties" canto inferior esquerdo/ ou se preferir enter na lista e procure por privacy e terá acesso a todas propriedades do app 
 Adicione as duas chaves acima
 
 📱 Níveis de Permissão do Calendário
