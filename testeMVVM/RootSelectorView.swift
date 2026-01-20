@@ -8,14 +8,12 @@ struct RootSelectorView: View {
             List {
                 Section("Mini Apps") {
                     NavigationLink("API de Clima (HG Brasil)") { WeatherMiniApp() }
-                    NavigationLink("Mapas (starter)") { MapsMiniApp() }
-                }
-                Section("Arquitetura") {
-                    NavigationLink("Arquitetura (Fluxo Principal)") { ArquiteturaView() }
-                }
-                Section("Permissoes") {
+                    NavigationLink("Mapas") { MapsMiniApp() }
+                    NavigationLink("Arquitetura") { ArquiteturaView()}
                     NavigationLink("Calendário") { PermissaoCalendarioApp() }
-                }
+                    NavigationLink("CicloDeVida") { CicloDeVidaApp() }
+//                    NavigationLink("Notificacoes") { NotificacoesBadgeApp() }
+                    }
             }
             .navigationTitle("Projetos")
         }
