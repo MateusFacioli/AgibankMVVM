@@ -67,9 +67,13 @@ Um projeto completo demonstrando o ciclo de vida em SwiftUI usando arquitetura M
 - Ações administrativas
 - Informações técnicas
 
-## 🛠️ Funcionalidades Técnicas
 
-### **Reatividade com Combine**
-```swift
-@Published var contadorAparicoes: Int = 0
-// View atualiza automaticamente quando muda
+
+
+Exercicio para fixar usando MVVM E SwiftUI
+FÁCIL: Contador -> usando  alguns métodos do ciclo de vida usar prints nos métodos
+- Contexto:  instanciando viewmodel, usando o init
+             view apareceu, usando o .onAppear
+             view saiu, usando o  .onDisappear
+             botão para incrementar o contador 
+             flow no log: init, onAppear, incrementa, ondisappear
