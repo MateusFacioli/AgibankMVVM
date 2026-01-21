@@ -12,9 +12,8 @@ struct RootSelectorView: View {
                     NavigationLink("Arquitetura") { ArquiteturaView()}
                     NavigationLink("Calendário") { PermissaoCalendarioApp() }
                     NavigationLink("CicloDeVida") { CicloDeVidaApp() }
-                    NavigationLink("Notificacoes") { NotificacoesBadgeApp() }
+//                    NavigationLink("Notificacoes") { NotificacoesBadgeApp() }
                     }
-                    NavigationLink("EmojiArtApp") { EmojiArtApp() }
             }
             .navigationTitle("Projetos")
         }
