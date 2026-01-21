@@ -15,7 +15,7 @@
 
 
 import SwiftUI
-
+//menu
 struct CicloVidaView: View {
     @StateObject private var viewModel = CicloDeVidaViewModel()
     @State private var selecionarAba = 0
@@ -51,13 +51,6 @@ struct CicloVidaView: View {
                     Label("Logs", systemImage: "terminal.fill")
                 }
                 .tag(2)
-            
-            // MARK: - Tab 4: Configurações
-            ConfiguracoesView(viewModel: viewModel)
-                .tabItem {
-                    Label("Info", systemImage: "info.circle.fill")
-                }
-                .tag(3)
         }
         .accentColor(.blue)
         // MARK: - onAppear (Equivalente a viewDidAppear) - apenas 1 vez quando a tela antes de aparecer irá chamar

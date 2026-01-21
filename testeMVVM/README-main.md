@@ -42,7 +42,12 @@ ciclo de vida & authenticao token - mensagem
 modulos podfile cocoapods
 banco de dados
 upload de arquivos - pdf de comprovantes
+funções de map, reduce
+modularização do projeto + targets
+semaforo
+podfile
 
+documentaçao com ///
  
 #abordagens
 -exercicios em arquivos e +testes +imagens teoria

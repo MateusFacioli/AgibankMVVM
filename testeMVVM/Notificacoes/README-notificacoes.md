@@ -3,7 +3,6 @@
 
 Um projeto completo para ensinar notificações locais e badges na bandeja do app usando MVVM e SwiftUI.
 
-## 🎯 O QUE ENSINA
 
 ### **1. Sistema de Notificações**
 - Permissões do usuário
@@ -28,5 +27,3 @@ Um projeto completo para ensinar notificações locais e badges na bandeja do ap
 - scenePhase (background/foreground)
 - Deinit para limpeza
 - Observadores do sistema
-
-## 🏗️ ESTRUTURA MVVM

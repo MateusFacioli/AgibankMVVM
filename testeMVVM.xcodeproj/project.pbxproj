@@ -40,7 +40,9 @@
 		DCEBFBC32F1D2922005AD8A5 /* Exceptions for "testeMVVM" folder in "testeMVVM" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Permissoes/README.md,
+				"EmojiArt/README-emojiart.md",
+				Info.plist,
+				"Permissoes/README-permissao.md",
 			);
 			target = DCB0A4ED2F101F6E00E2B18A /* testeMVVM */;
 		};
@@ -51,7 +53,7 @@
 			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
 			buildPhase = DCB0A4EA2F101F6E00E2B18A /* Sources */;
 			membershipExceptions = (
-				Permissoes/README.md,
+				"Permissoes/README-permissao.md",
 			);
 		};
 /* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
@@ -434,6 +436,7 @@
 				DEVELOPMENT_TEAM = SB927AN2T5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = testeMVVM/Info.plist;
 				INFOPLIST_KEY_NSCalendarsFullAccessUsageDescription = "Para criar e gerenciar eventos, precisamos de acesso completo ao seu calendário.";
 				INFOPLIST_KEY_NSCalendarsUsageDescription = "O aplicativo precisa acessar seu calendário para criar eventos e lembretes";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -468,6 +471,7 @@
 				DEVELOPMENT_TEAM = SB927AN2T5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = testeMVVM/Info.plist;
 				INFOPLIST_KEY_NSCalendarsFullAccessUsageDescription = "Para criar e gerenciar eventos, precisamos de acesso completo ao seu calendário.";
 				INFOPLIST_KEY_NSCalendarsUsageDescription = "O aplicativo precisa acessar seu calendário para criar eventos e lembretes";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

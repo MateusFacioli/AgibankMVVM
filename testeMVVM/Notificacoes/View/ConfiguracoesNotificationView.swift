@@ -105,14 +105,6 @@ struct ConfiguracoesNotificationView: View {
                     .foregroundColor(.green)
                 }
                 
-                // MARK: - Seção: Estatísticas
-                Section("Estatísticas") {
-                    InfoRow(icone: "bell.fill", titulo: "Total de Notificações", valor: "\(notificacaoVM.notificacoes.count)")
-                    InfoRow(icone: "clock.fill", titulo: "Ativas", valor: "\(notificacaoVM.notificacoesAtivas.count)")
-                    InfoRow(icone: "checkmark.circle.fill", titulo: "Entregues", valor: "\(notificacaoVM.notificacoes.filter { $0.foiEntregue }.count)")
-                    InfoRow(icone: "0.circle.fill", titulo: "Badge Atual", valor: "\(notificacaoVM.badgeCount)")
-                }
-                
                 // MARK: - Seção: Ações
                 Section("Ações") {
                     Button {
