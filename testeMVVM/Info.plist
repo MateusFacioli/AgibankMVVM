@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSUserNotificationsBadgeUsageDescription</key>
+	<string>O app precisa mostrar badges na bandeja para indicar notificações pendentes.</string>
+	<key>NSUserNotificationsUsageDescription</key>
+	<string>O app precisa enviar notificações para lembrar você de eventos importantes.</string>
+	<key>UNUserNotificationCenter</key>
+	<true/>
+</dict>
+</plist>

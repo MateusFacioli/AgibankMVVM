@@ -40,15 +40,13 @@ push notification
 tagueamento + analytics + acessibilidade 
 ciclo de vida & authenticao token - mensagem 
 modulos podfile cocoapods
-banco de dados
+banco de dados - json local + salvar 
 upload de arquivos - pdf de comprovantes
 funções de map, reduce
 modularização do projeto + targets
 semaforo
 podfile
-
-documentaçao com ///
- 
+ documentaçao com ///
 #abordagens
 -exercicios em arquivos e +testes +imagens teoria
 -como comecar com o ui -> padrao de tela
