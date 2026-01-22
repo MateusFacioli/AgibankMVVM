@@ -15,6 +15,7 @@ struct RootSelectorView: View {
                     NavigationLink("Notificacoes") { NotificacoesBadgeApp() }
                     }
                     NavigationLink("EmojiArtApp") { EmojiArtApp() }
+                NavigationLink("Persistencia") { PersistenciaDadosApp() }
             }
             .navigationTitle("Projetos")
         }
